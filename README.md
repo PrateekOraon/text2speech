@@ -1,5 +1,5 @@
 ### Create 'Text to Speech' App using Django, HTML and AWS Polly
-![screenshot 2](https://user-images.githubusercontent.com/20254425/38979666-6f54a04a-43d8-11e8-942e-a5ebf225d0f5.png)
+![screenshot 4](https://user-images.githubusercontent.com/20254425/39020649-468623a0-444b-11e8-89a5-e7b3ea70b945.png)
 
 
 1) Install googletrans:
