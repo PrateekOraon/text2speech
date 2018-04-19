@@ -1,4 +1,4 @@
-### Create 'Text to Speech' App using Python, HTML and AWS Polly
+### Create 'Text to Speech' App using Django, HTML and AWS Polly
 ![screenshot 2](https://user-images.githubusercontent.com/20254425/38979666-6f54a04a-43d8-11e8-942e-a5ebf225d0f5.png)
 
 
