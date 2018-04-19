@@ -10,7 +10,7 @@
 
 > `<pip install boto3>`
 
-Make change values in views.py:
+Make changes to views.py:
 ```python
 response = client.synthesize_speech(
         OutputFormat ='json'|'mp3'|'ogg_vorbis'|'pcm',
