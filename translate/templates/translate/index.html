@@ -7,9 +7,11 @@
     {% load staticfiles %}
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="{% static 'translate/tts.js' %}"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="{% static 'translate/style.css' %}" />
     <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 
 </head>
 <body>
@@ -20,14 +22,14 @@
                 {% csrf_token %}
                 {{ form }}
                 <div class="form-group">
-                    <input type="text" class="form-control" id="email" placeholder="Enter text" name="string">
+                    <input type="textarea" class="form-control" id="email" placeholder="Enter text" value="{{ text }}" name="string">
                 </div>
-                <button type="submit" class="btn btn-success">Submit</button>
+                <button type="submit" class="btn btn-success pull-right">Convert</button>
             </form>
             <div class="french boundary">
-                <h3>"{{message}}"</h3>
+                <h3 class="raleway">{{message}}</h3>
             </div>
-            <audio controls>
+            <audio controls id="myAudio">
               <source src="{% static "translate/polly-boto.ogg" %}" type="audio/ogg">
               <source src="{% static "translate/polly-boto.mp3" %}" type="audio/mpeg">
               Your browser does not support the audio tag.

@@ -21,7 +21,15 @@ h1{
 .french{
     color: white;
     padding-top: 20px;
+    padding-bottom: 20px;
 }
 hr{
     border-color: white;
+}
+.raleway{
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+}
+input#email {
+    padding-right: 34px;
 }
