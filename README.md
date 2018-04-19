@@ -4,11 +4,11 @@
 
 1) Install googletrans:
 
-> `<pip install googletrans>` 
+> `pip install googletrans` 
 
 2) Install boto3
 
-> `<pip install boto3>`
+> `pip install boto3`
 
 Make changes to views.py:
 ```python
